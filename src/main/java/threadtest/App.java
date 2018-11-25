@@ -1,6 +1,5 @@
 package threadtest;
 
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -66,6 +65,7 @@ public class App {
 
             System.out.println("Atomic counter is " + counter.getAtomicValue());
             System.out.println("Non Atomic counter is " + counter.getNonAtomicValue());
+            System.out.println("My atomic counter is " + counter.getMyAtomicValue());
         } catch (Exception e) {
             e.printStackTrace();
         }
